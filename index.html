@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tom Pearl | Official Website</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #06152c;
+  color: white;
+}
+header {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #091e3d;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #55b5ff;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+nav a:hover { color: #55b5ff; }
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background:
+    radial-gradient(circle at 50% 40%,
+    #164d91 0%, #0a2850 35%, #06152c 75%);
+  animation: appear 1.5s ease;
+}
+.hero h1 {
+  font-size: clamp(42px, 9vw, 85px);
+  letter-spacing: 5px;
+  text-shadow: 0 0 30px #168bff;
+}
+.hero p {
+  color: #b9d9ff;
+  margin: 20px 0 30px;
+  font-size: 18px;
+}
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: #168bff;
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #168bff;
+}
+section {
+  padding: 80px 8%;
+  text-align: center;
+}
+h2 {
+  color: #55b5ff;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+.about p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+  color: #c8dcf5;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid #2364a8;
+  transition: .3s;
+}
+.gallery img:hover {
+  transform: scale(1.04);
+}
+.video-placeholder {
+  max-width: 700px;
+  margin: auto;
+  padding: 55px 20px;
+  border: 1px solid #2364a8;
+  border-radius: 18px;
+  background: #0b2548;
+  color: #c8dcf5;
+}
+.contact a { color: #55b5ff; }
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #091e3d;
+  color: #9bb9da;
+}
+@keyframes appear {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TOM PEARL</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Bilder</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <h1>TOM PEARL</h1>
+  <p>Welcome to the official website</p>
+  <a class="btn" href="#about">EXPLORE</a>
+</div>
+
+<section class="about" id="about">
+  <h2>About Tom Pearl</h2>
+  <p>
+    Välkommen till Tom Pearls hemsida!
+    Här kan du upptäcka bilder, videos och
+    mer information om Tom Pearl.
+    Mer information kommer snart!
+  </p>
+</section>
+
+<section id="gallery">
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="https://placehold.co/600x400/123b69/ffffff?text=Photo+1" alt="Bild 1">
+    <img src="https://placehold.co/600x400/164d91/ffffff?text=Photo+2" alt="Bild 2">
+    <img src="https://placehold.co/600x400/0b2548/ffffff?text=Photo+3" alt="Bild 3">
+  </div>
+</section>
+
+<section id="videos">
+  <h2>Videos</h2>
+  <div class="video-placeholder">
+    <h3>Coming Soon</h3>
+    <p>Videos om Tom Pearl kommer här!</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p>Vill du komma i kontakt?</p>
+  <p>Kontaktuppgifter kommer snart.</p>
+</section>
+
+<footer>
+  © 2026 Tom Pearl | Official Website
+</footer>
+
+</body>
+</html>
